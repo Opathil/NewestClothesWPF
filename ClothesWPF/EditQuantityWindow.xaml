@@ -1,0 +1,31 @@
+﻿<Window x:Class="ClothesWPF.EditQuantityWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClothesWPF"
+        mc:Ignorable="d"
+        Title="EditQuantityWindow" Height="150" Width="300">
+    <Grid>
+        <Label Target="{Binding ElementName=EditQuantityTextBox}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,26">_Количество:</Label>
+        <TextBox Name="EditQuantityTextBox" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="47,25" Height="30" Width="140"></TextBox>
+
+        <Button Height="30" Width="100" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="30,10" Click="ChangeQuantityButton_Click">Запази</Button>
+        <Button Height="30" Width="100" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="30,10" Click="ExitButton_Click">Изход</Button>
+        <!--<Button>
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="C:\Users\PC\Desktop\Projects\NewestClothesWPF\ClothesWPF\Images\Plus.png"  
+                           Height="30" Width="30" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="15, 10"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button>
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="C:\Users\PC\Desktop\Projects\NewestClothesWPF\ClothesWPF\Images\Minus.png" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="15,40"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>-->
+    </Grid>
+</Window>
