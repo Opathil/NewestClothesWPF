@@ -20,6 +20,8 @@
 
         public virtual IDbSet<Sale> Sales { get; set; }
 
+        //Comment
+
         public virtual IDbSet<DailyReport> DailyReports { get; set; }
     }
 }
